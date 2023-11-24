@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F0FFFF;">
+    <a class="navbar-brand" href="#">Restro</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="add">Add Restaurant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="list">List All Restaurant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="update">Update Restaurant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" routerLink="register">Login</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+<!-- <ul>
+    <li>
+        <a routerLink="add">Add Restaurent</a>
+    </li>
+    <li>
+        <a routerLink="list">List all Restaurent</a>
+    </li>
+    <li>
+        <a routerLink="update">Update Restaurent</a>
+    </li>
+    <li>
+        <a routerLink="register">Register Restaurent</a>
+    </li>
+    <li>
+        <a routerLink="login">Login Restaurent</a>
+    </li>
+</ul> -->
+<div class="container " style="margin: auto;">
+    <router-outlet></router-outlet>
+</div>

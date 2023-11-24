@@ -1,0 +1,28 @@
+<h1 style="text-align: center;">Restaurent Lists</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Pincode</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of collection">
+        <td>{{item.name}}</td>
+        <td>{{item.Address}}</td>
+        <td>{{item.pincode}}</td>
+        <td><button (click)="deleteItem(item.id)">Delete</button></td>
+        <td><a routerLink='/update/{{item.id}}' style="text-decoration: none;color: rgb(10, 255, 173);">Update</a></td>
+      </tr>
+    </tbody>
+  </table>
+<!-- <ul>
+    <li *ngFor="let item of collection">
+        Name : {{item.name}} 
+        Address : {{item.Address}}
+        Pincode : {{item.pincode}}
+        <button (click)="deleteItem(item.id)">Delete</button>
+        <a routerLink='/update/{{item.id}}'>Update</a>
+    </li>
+</ul> -->
